@@ -5,6 +5,7 @@
  * @param {object} data - Data to send
  * @returns {Promise<any>} - API response data
  */
+const API_BASE_URL = `${import.meta.env.VITE_API_URL}/api`;
 async function sendData(endpoint, method, data) {
     try {
         const response = await fetch(`${API_BASE_URL}/${endpoint}`, {
@@ -24,7 +25,7 @@ async function sendData(endpoint, method, data) {
     }
 }
 // const API_BASE_URL="http://localhost:5173/";
-const API_BASE_URL = "https://schoolmanagement-api-67878057783.us-central1.run.app/api";
+
 async function adminStudentMngFetchData(endpoint) {
     try {
         const response = await fetch(`${API_BASE_URL}/${endpoint}`);
