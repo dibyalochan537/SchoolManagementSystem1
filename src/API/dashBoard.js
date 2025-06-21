@@ -44,6 +44,4 @@ export async function getAdminDashboardCountData(){
 }
 
 
-console.log(await getAdminDashboardCountData());
-
 
