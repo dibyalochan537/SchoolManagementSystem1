@@ -8,7 +8,7 @@
 const API_BASE_URL = `${import.meta.env.VITE_API_URL}/api`;
 async function sendData(endpoint, method, data) {
     try {
-        const response = await fetch(`${API_BASE_URL}/${endpoint}`, {
+        const response = await fetch(`${API_BASE_URL}${endpoint}`, {
             method,
             headers: {
                 'Content-Type': 'application/json'
