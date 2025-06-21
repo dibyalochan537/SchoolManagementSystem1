@@ -24,5 +24,3 @@ export async function adminGetAllParentManagement(){
     let getParentData=await adminParentMngFetchData(`/parents`);
     return getParentData["parents"];
 }
-
-console.log(await adminGetAllParentManagement());
