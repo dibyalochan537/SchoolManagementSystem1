@@ -29,8 +29,8 @@ export async function provideListOfAllActor(){
     let classListOfSchool=await sendListOfAllActor("/class/settings");
     // let classListOfSchool=Object.keys(classSectionData);
     const classListTeacher = teachingStaffs.map(staff => staff.name);
-    let staffDeptpartmentList=await sendListOfAllActor("departments");
-    let staffListDesignation=await sendListOfAllActor("designations");
+    let staffDeptpartmentList=await sendListOfAllActor("/departments");
+    let staffListDesignation=await sendListOfAllActor("/designations");
     // console.log("Items are :",classListOfSchool);
     
     return [classListOfSchool.classes,classListTeacher,staffDeptpartmentList,staffListDesignation];
