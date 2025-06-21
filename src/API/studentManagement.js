@@ -28,7 +28,7 @@ async function sendData(endpoint, method, data) {
 
 async function adminStudentMngFetchData(endpoint) {
     try {
-        const response = await fetch(`${API_BASE_URL}/${endpoint}`);
+        const response = await fetch(`${API_BASE_URL}${endpoint}`);
         if (!response.ok) {
             throw new Error(`Failed to fetch data from ${endpoint}`);
         }
