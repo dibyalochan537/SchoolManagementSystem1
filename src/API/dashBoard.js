@@ -36,7 +36,7 @@ export async function getAdminDashboardCountData(){
     let stCount=await adminDashboardFetchData("/students");
     let gendCount=await genderCount(stCount);
     let staffCount=await adminDashboardFetchData("/staff");
-    let activeClass=await adminDashboardFetchData("class/settings");
+    let activeClass=await adminDashboardFetchData("/class/settings");
     let activeClassCount=Object.keys(activeClass.classes)
     let availSubCount=await adminDashboardFetchData("/subjects");
     let stdDistCount=await studentDistributionCount(stCount,activeClassCount);
