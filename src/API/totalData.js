@@ -35,4 +35,3 @@ export async function provideListOfAllActor(){
     
     return [classListOfSchool.classes,classListTeacher,staffDeptpartmentList,staffListDesignation];
 }
-console.log(await provideListOfAllActor());
