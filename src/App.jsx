@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
-import LoginSignUpPage from './pages/auth/LoginsignUp.jsx'
+import LoginSignUpPage from './pages/auth/LoginSignUp.jsx'
 import AdminHomePage from './Pages/admin/AdminHomePage.jsx'
 import { ThemeProvider } from 'react-bootstrap';
 function App() {
