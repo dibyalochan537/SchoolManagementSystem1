@@ -6,7 +6,7 @@
  * @returns {Promise<any>} - API response data
  */
 // const API_BASE_URL="http://localhost:5173/";
-const API_BASE_URL = "https://schoolmanagement-api-67878057783.us-central1.run.app/api";
+const API_BASE_URL = `${import.meta.env.VITE_API_URL}/api`;
 // Fetch
 async function adminClassMngFetchData(endpoint) {
     try {
