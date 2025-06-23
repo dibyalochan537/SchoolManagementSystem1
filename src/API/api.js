@@ -6,6 +6,7 @@
 // LOCAL SERVER DOCKER
 // const API_BASE_URL ="http://localhost/api";
 // PRODUCTION SERVER
+// https://student-management-system1-coral.vercel.app/admin
 const API_BASE_URL = "https://schoolmanagement-api-67878057783.us-central1.run.app/api";
 //#region GET REQUEST FUNCTION
 /**
