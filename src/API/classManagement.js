@@ -32,3 +32,6 @@ export async function adminGetAllClassManagement(clsName,clsSection){
     return getClasses;
 }
 
+export async function getAllSubject(){
+    return await adminClassMngFetchData("subjects");
+}
