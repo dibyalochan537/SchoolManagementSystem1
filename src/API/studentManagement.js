@@ -67,3 +67,28 @@ export async function deleteStudentStMng(selectedIds){
         throw error;
     }
 }
+
+export async function getAttendanceOfStudents(){
+    return await adminStudentMngFetchData("attendance/students");
+}
+// Student Fees
+export async function getFeesOfStudents(){
+    return await adminStudentMngFetchData("accounts/students");
+}
+//student Paid data
+export async function getPaidAmountDataOfStudent() {
+  const allStudentPayment = await adminStudentMngFetchData("accounts/students");
+  const studentPaidAmounts = allStudentPayment.map(student => {
+    const totalPaid = student.payments.reduce((sum, payment) => {
+      return sum + (parseFloat(payment.paidAmount) || 0);
+    }, 0);
+
+    return {
+      name:student.name,
+      regdNo: student.regdNo,
+      class: student.class,
+      paidAmount: totalPaid
+    };
+  });
+  return studentPaidAmounts;
+}
