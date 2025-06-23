@@ -77,7 +77,7 @@ function LoginSignUp() {
       >
         {/* Login Form */}
         <div className="form-container sign-in-container">
-          <form action="http://localhost:5000/login" method="post">
+          <form action="/admin" method="post">
             <h1 className="mb-4">Login</h1>
             <div className="form-group mb-3">
               <div className="input-icon">
