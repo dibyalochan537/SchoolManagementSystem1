@@ -25,3 +25,7 @@ export async function adminGetAllStaffManagement(){
     return getStaffData;
 }
 
+export async function getAttendanceOfStaffs(){
+    return await adminSatffMngFetchData("attendance/staffs")
+}
+
