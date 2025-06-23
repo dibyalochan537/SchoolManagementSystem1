@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://schoolmanagement-api-67878057783.us-central1.run.app/api";
+const API_BASE_URL =  `${import.meta.env.VITE_API_URL}/api`;
 async function transactionDetails(endpoint) {
     try {
         const response = await fetch(`${API_BASE_URL}/${endpoint}`);
