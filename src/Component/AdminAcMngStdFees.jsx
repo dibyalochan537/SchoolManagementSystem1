@@ -13,7 +13,7 @@ import { Alert } from "react-bootstrap";
 import AdminAcMngStdFeePayNowModal from "./AdminAcMngStdFeePayNowModal";
 import { FaUserGraduate, FaFileInvoice } from "react-icons/fa";
 import {getFeesOfStudents,adminGetAllStudentManagement} from "../API/studentManagement"
-import PrintAccountDetailsStudent from "../layout/printAccountDetailsStudent";
+import PrintAccountDetailsStudent from "../layout/PrintAccountDetailsStudent";
 // const studentInformation = [
 //   {
 //     firstName: "Vavya",
