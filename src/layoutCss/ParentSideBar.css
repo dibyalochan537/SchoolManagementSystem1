@@ -1,0 +1,143 @@
+.parent-side-bar{
+    height:100vh;
+    width:250px;
+    background-color:white;
+    border-right:.5px solid #ccc;
+    box-shadow: 3px 0 9px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width:250px;
+    overflow:scroll;
+    scrollbar-width:none;
+}
+.parent-side-bar-top{
+    display:flex;
+    justify-content:right;
+    align-items: center;
+    height:120px;
+}
+.parent-sidebar-close-btn {
+    display: none;
+}
+.parent-sidebar-close-btn .i{
+    margin-top:-50px;
+}
+.parent-side-header{
+    height:120px;
+    width:100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.parent-side-header img{
+    height:70px;
+}
+.parent-side-header h3{
+    font-size:x-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:800;
+    margin: 0;
+}
+.parent-pt-name{
+    height:70px;
+    width:100%;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    gap:10px;
+    padding-left:20px;
+}
+.parent-profile-circle{
+    font-size:35px;
+}
+.parent-pt-nm-h6 h6{
+    font-size:15px;
+    font-weight:680;
+    margin: 0;
+    padding: 0;
+}
+.parent-pt-nm-h6 span{
+    font-size:13px;
+    font-weight:700;
+    background-color: #dc3545;
+    color: white;
+    padding:1px 7.8px;
+    border-radius:4px;
+}
+.parent-side-list{
+    width:100%;
+    height:auto;
+    
+}
+.parent-side-list li{
+    height:50px;
+    padding-left: 20px;
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.parent-side-list li:hover{
+    background-color:rgba(216, 231, 255, 0.562);
+    color: rgb(33, 149, 245);
+}
+.parent-side-list-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:25px;
+}
+.parent-side-list-item{
+    font-size:15px;
+    margin-left: 10px;
+}
+.parent-list-accounts{
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.parent-list-accounts>span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent-list-accounts p{
+    margin:0;
+    padding:5px 0 5px 40px;
+    width:100%;
+    font-size:13px;
+    display:flex;
+    justify-content:left;
+    align-items: center;
+}
+.active-li{
+    background-color: #a1d1fd8c;
+    border-left: 4px solid #2c92ff;
+    font-weight:700;
+    color: rgb(33, 149, 245);
+}
+
+@media(max-width:768px){
+    .parent-side-bar{
+        position: absolute;
+        overflow: scroll;
+        z-index: 1000;
+        transform: translateX(-260px); /* Start off-screen */
+        transition: transform 0.5s ease;
+    }
+    .parent-side-bar.visible {
+        transform: translateX(0);
+        margin-left: 0;
+    }
+    .parent-sidebar-close-btn {
+        display: flex;
+        justify-content: center;
+        width:50px;
+        font-size: 40px;
+    }
+
+
+}
